@@ -1,23 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fuente Jomhuria y Moderustic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+    
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="Styles/Styles.css" />
+    <title>Landing Page</title>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
+    <header>
+        <div class="contenedor-header">
+          <h2>EXPLORANDO ANDO</h2>
+          <p>Conoce la belleza natural y cultural de Colombia</p>
+        <a href="#otro">Descubre más aquí</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="contenido">
+      <!-- empieza izquierda -->
+      <div class="iz">
+        <img
+          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/8e/0a/63/colombia-and-experience.jpg?w=1200&h=1200&s=1"
+          width="500px"
+          height="300px"
+          alt="Piedra del Peñól"
+        />
+        <div class="beneficios">
+          <div class="b1">
+            <i class="fa-solid fa-calendar-days fa-4x"></i>
+            <p>Planes ajustables para que puedas viajar cuando más te convenga.</p>
+            
+          </div>
+          <div class="b2">
+            <i class="fa-solid fa-mountain-city fa-4x"></i>
+            <p>Descubre paisajes asombrosos desde playas caribeñas hasta montañas andinas y selvas amazónicas.</p>
+            
+          </div>
+          <div class="b3">
+            <i class="fa-solid fa-utensils fa-4x" ></i>
+            <p> Disfruta de lo mejor de la cocina colombiana en los lugares más auténticos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Termina izquierda -->
+
+      <!-- empieza derecha -->
+      <div class="der">
+        <div class="form-title">
+          <h3>
+            ¡Inscríbete para recibir más información y obtén un descuento en tu
+            primera compra!
+          </h3>
+        </div>
+        <div class="form">
+          <form action="/">
+            <label for="text" class="label">Nombre:</label>
+            <input type="text" id="placeholder" placeholder="Ingresa tu nombre" />
+
+            <label for="email" class="label">Correo Electrónico:</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Ingresa tu correo electrónico"
+            />
+
+            <a class="submit" href="">Enviar</a>
+        </form>
+            
+        </div>
+      </div>
+      <!-- termina derecha -->
+    </div>
+
+    <div class="otrosPlanes" id="otro">
+      <h1>Algunos de nuestros planes</h1>
+      <div class="planess">
+        <div class="pln1">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ30LrVIWkLdSCwxQTzl33bFXws83d7lzA7PQ&s"
+            alt="Caño Cristales"
+          />
+          <h3>Caño Cristales</h3>
+        </div>
+        <div class="pln2">
+          <img
+            src="https://cruceroturismo.com/wp-content/uploads/2021/08/Parque-del-Cafe-torre-del-mirador.jpg"
+            alt="Parque del Café"
+          />
+          <h3>Parque del Café</h3>
+        </div>
+        <div class="pln3">
+          <img
+            src="https://imgix.cosmicjs.com/f97faa80-19b2-11ed-bb32-e9c82d20f16c-thumbnail-.metadata.jpeg"
+            alt="Parque Explora"
+          />
+          <h3>Parque Explora</h3>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h1>¡No olvides inscribirte para conseguir el descuento!</h1>
+    </footer>
   </body>
 </html>
